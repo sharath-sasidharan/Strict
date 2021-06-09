@@ -1,0 +1,32 @@
+.description {
+    padding:75px 0; 
+    margin-bottom: 5%;
+    background:$dim;
+    
+    .wrapper {
+        @include flex();
+        @include justify-content(center);
+        @include align-items(center);
+        @include flex-direction(column);
+    
+        h2 {
+            margin-bottom: 2%;
+            color:$muted;
+            font-family: sans-serif;
+            font-weight: map-get($map,"medium");  
+        }
+
+        p {
+            width:65%;
+            color:$gray;
+            font-family: sans-serif;
+            line-height: 25px;
+            text-align-last: center;  
+            @include device(Phone) {
+                 width: 50%;
+                 font-size: 13px;
+                 text-align: justify;
+            }
+        }
+    }  
+}

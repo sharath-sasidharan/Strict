@@ -1,0 +1,22 @@
+header {
+    width:100%;
+    background:$dim;
+    padding:23px 0;
+
+    .wrapper {
+        max-width: 1350px;
+        width:69.5%;
+        margin: 0 auto;
+
+        a {
+            display: inline-block;
+            text-indent: -9999px;
+       
+            img {
+                float: right;
+                width:100%;
+                text-indent: 0;  
+            }
+        }
+    }
+}

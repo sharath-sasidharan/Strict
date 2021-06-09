@@ -1,0 +1,61 @@
+.services {
+
+    .wrapper {
+        @include flex();
+        @include justify-content(center);
+        @include align-items(center);
+        @include device(Tablet) {
+            display:block;
+            width:100%;
+         }
+            
+        .service_one {@include flex-basis(25%)}
+        .service_two {@include flex-basis(25%)}
+        .service_three {@include flex-basis(25%)}
+
+        .service {
+            text-align: center;
+
+            .post {
+                padding:18px;
+                margin-bottom: 5%;
+                display: inline-block;
+                background:linear-gradient(to right, rgb(72,150,255), rgb(95,195,255));
+                text-indent: -9999px; 
+
+                &::before {
+                    content: "\f3cd";
+                    padding:7px;
+                    font : 900 30px "Font Awesome 5 Free";
+                    color:$light;
+                    float: right;
+                    text-indent: 0;                   
+                }
+            }
+
+        .design::before{  content: '\f1d8'; }
+        .horn::before{  content: '\f0a1'; }
+        
+
+        h2 {
+            margin-bottom: 3%;
+            color:$shade;
+            font-weight: map-get($map,"medium");
+            font-family: sans-serif;
+            font-size: 18px; 
+        }
+
+        p {
+            width:80%;
+            margin: 0 auto;
+            margin-bottom: 15%;
+            color:$gray;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        }
+    }
+
+}
